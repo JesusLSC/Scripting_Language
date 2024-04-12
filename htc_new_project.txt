@@ -1,0 +1,9 @@
+django-admin startproject Project_Name
+cd project_directory
+py manage.py startapp app_name
+open models.py
+add the app in settings INSTALLED_APPS 'app_name.apps.(check apps.py)',
+hop> py manage.py makemigrations
+Migrations for 'Orders_Manager':
+			 Orders_Manager\migrations\0001_initial.py
+py manage.py sqlmigrate Orders_Manager 0001
